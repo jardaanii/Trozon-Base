@@ -1,0 +1,66 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url("cat.png");
+  background-size: cover;
+}
+
+.container {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.div-element {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 65px; /* Adjust the desired position of the div element */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px; /* Adjust the width of the div element */
+  height: 500px; /* Adjust the height of the div element */
+  border-radius: 15px;
+  background-color: rgba(47, 89, 121, 0.5); /* Semi-transparent background */
+  z-index: 2; /* Place the div above the image */
+  opacity: 1; /* Initially fully visible */
+  transition: opacity 0.2s ease-in-out; /* Add a smooth transition for opacity */
+}
+h1 {
+  margin-top: 200px;
+  font-family: "Lilita One", "cursive";
+  font-size: 92px;
+  color: #cee2f8;
+}
+
+.image {
+  position: absolute;
+  top: 0px; /* Initial position at the top */
+  left: 30%;
+  transform: translateX(-50%);
+  width: 79px; /* Adjust the image width */
+  height: 100px;
+  background-size: cover;
+  z-index: 1;
+  transition: top 0.5s ease-in-out; /* Adjust the transition duration for smoother sliding */
+}
+
+#eye-socket-left {
+  height: 10.5px;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-50%);
+  transition: top 0.5s ease-in-out;
+}
+
+#eye-socket-right {
+  height: 10.5px;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-50%);
+  transition: top 0.5s ease-in-out;
+}

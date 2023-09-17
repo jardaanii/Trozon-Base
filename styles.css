@@ -5,6 +5,9 @@ body {
   overflow: hidden;
   background-image: url("cat.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This helps maintain the image position */
+  background-position: center center;
 }
 
 .container {

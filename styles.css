@@ -64,3 +64,37 @@ h1 {
   transform: translateX(-50%);
   transition: top 0.5s ease-in-out;
 }
+/* Media query for phones */
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .div-element {
+    top: 35px; /* Adjust the desired position for phones */
+    width: 90%; /* Adjust the width for phones */
+    height: auto; /* Allow the height to adjust based on content */
+  }
+
+  h1 {
+    font-size: 40px; /* Adjust the font size for phones */
+    margin-top: 100px; /* Adjust the top margin for phones */
+  }
+
+  .image {
+    width: 50px; /* Adjust the image width for phones */
+    height: 69px; /* Adjust the image height for phones */
+    margin-left: -60px;
+  }
+
+  #eye-socket-left,
+  #eye-socket-right {
+    height: 7.5px; /* Adjust the height of eye sockets for phones */
+  }
+}
